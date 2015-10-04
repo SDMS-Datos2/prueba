@@ -4,6 +4,16 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Cliente.h</itemPath>
+      <itemPath>Cliente_Thread.h</itemPath>
+      <itemPath>Constantes.h</itemPath>
+      <itemPath>d_pointer_size_type.h</itemPath>
+      <itemPath>darray.h</itemPath>
+      <itemPath>dchar.h</itemPath>
+      <itemPath>dfloat.h</itemPath>
+      <itemPath>dheap.h</itemPath>
+      <itemPath>dint.h</itemPath>
+      <itemPath>dlong.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +22,19 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Cliente.cpp</itemPath>
+      <itemPath>Cliente_Thread.cpp</itemPath>
+      <itemPath>Constantes.cpp</itemPath>
+      <itemPath>d_pointer_size_type.cpp</itemPath>
+      <itemPath>darray.cpp</itemPath>
+      <itemPath>dchar.cpp</itemPath>
+      <itemPath>dfloat.cpp</itemPath>
+      <itemPath>dheap.cpp</itemPath>
+      <itemPath>dint.cpp</itemPath>
+      <itemPath>dlong.cpp</itemPath>
+      <itemPath>lector.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>modificador.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -36,7 +58,51 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Cliente.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente_Thread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente_Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constantes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constantes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="d_pointer_size_type.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="d_pointer_size_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="darray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="darray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dchar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dchar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dfloat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dfloat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dheap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dheap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dlong.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dlong.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="modificador.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +125,51 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Cliente.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente_Thread.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cliente_Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constantes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constantes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="d_pointer_size_type.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="d_pointer_size_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="darray.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="darray.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dchar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dchar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dfloat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dfloat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dheap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dheap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dlong.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dlong.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="modificador.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
