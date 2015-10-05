@@ -37,7 +37,7 @@ Cliente::~Cliente() {
  */
 void Cliente::startThread(char* pIP, int Pport) {
     _servidores=new Cliente_Thread(pIP,Pport);
-    //pthread_create(_hilos,NULL,&Cliente_Thread::getInteract,_servidores);
+    pthread_create(_hilos,NULL,&Cliente_Thread::getInteract,_servidores);
     if(_cantHilos<_servers){
         _servidores++;_cantHilos++;_hilos++;
     }

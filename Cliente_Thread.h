@@ -30,9 +30,9 @@ public:
     void* interactuar(void);
     int getSocktFd();
     char* getID();
-    static void* getInteract(void* context)
+    static void* getInteract(void* pThread)
     {
-        return ((Cliente_Thread*) context)->interactuar();
+        return ((Cliente_Thread*) pThread)->interactuar();
     }
 private:
     int _sockfd, _portno, _n ;

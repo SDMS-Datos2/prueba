@@ -4,9 +4,9 @@
  *
  */
 
-#include "dlong.h"
 #include "dheap.h"
 #include "d_pointer_size_type.h"
+#include "dlong.h"
 
 /**
  * 
