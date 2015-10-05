@@ -19,3 +19,11 @@ const char* Constantes::error5="ERROR reading from socket";
 int Constantes::getLenght(const char* msg) {
     return strlen(msg);
 }
+
+int Constantes::contador(long dato) {
+    int i=0;
+    for(i;dato>0;i++){
+        dato/=10;
+    }
+    return i;
+}

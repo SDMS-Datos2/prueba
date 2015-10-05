@@ -46,6 +46,10 @@ public:
      * cinco=5
      */
     static const int cinco=5;
+     /**
+     * nueve
+     */
+    static const int nueve=9;
     /**
      * DosCincoSeis=256
      */
@@ -83,7 +87,15 @@ public:
      * se le paso.
      */
     int getLenght(const char* msg);
-    
+    /**
+     * contador de cantidad de digitos en un numero long,
+     * se va a utilizar para partir un numero mayor a bytes
+     * para ingresarlo en un int.
+     * @param dato dato tipo long.
+     * @return retorna un entero que es la cantidad de datos
+     * que contiene.
+     */
+    int contador(long dato);
 };
 
 #endif	/* CONSTANTES_H */

@@ -7,18 +7,19 @@
  * asigna un valor inicial de puntero
  */
 d_pointer_size_type::d_pointer_size_type(){
-    this->puntero=7;
+    this->espacio=(int*)malloc(dos*sizeof(int));
+    this->puntero=(int*)malloc(dos*sizeof(int));
 }
 //Obtiene el ID 
 int d_pointer_size_type::getID()const{
     return ID;
 }
 //Obtiene el puntero
-int d_pointer_size_type::getPtr()const{
+int* d_pointer_size_type::getPtr()const{
     return puntero;
 }
 //Obtiene el espacio en memoria que ocupa
-int d_pointer_size_type::getEsp(){
+int* d_pointer_size_type::getEsp(){
     return espacio;
 }
 //Obtiene el tipo
@@ -40,15 +41,33 @@ void d_pointer_size_type::setID(int pID){
  * Setea el puntero 
  * @param pPtr, valor a setear
  */
-void d_pointer_size_type::setPtr(int pPtr){
-    this->puntero=pPtr;
+void d_pointer_size_type::setPtr(long pPtr){
+    int largo=contador(pPtr);
+    int i=0;
+    if(largo<10){
+        *puntero=(int)pPtr;
+    }else{
+        (*puntero)=(pPtr/pow10(largo-nueve));
+        pPtr%=(int)pow10(largo-nueve);
+        *(++puntero)=(int)pPtr;
+        puntero-;
+    }
 }
 /**
  * Setea el la cantidad de epacio a ocupar 
  * @param pSpace, valor a setear
  */
-void d_pointer_size_type::setEsp(int pSpace){
-    this->espacio=pSpace;
+void d_pointer_size_type::setEsp(long pSpace){
+    int largo=contador(pSpace);
+    int i=0;
+    if(largo<10){
+        *espacio=(int)pSpace;
+    }else{
+        (*espacio)=(pSpace/pow10(largo-nueve));
+        pSpace%=(int)pow10(largo-nueve);
+        *(++espacio)=(int)pSpace;
+        espacio--;
+    }
 }
 /**
  * Setea el tipo
