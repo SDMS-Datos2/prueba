@@ -28,12 +28,9 @@ public:
     void operator= (const d_pointer_size_type &pPointer);
     void operator= (const dObject &pDObject);
     void operator= (const int pInt);
-    //Completar
-    /**
-    dObject operator* (const int &p);
-    void operator++ (const int p);
-    void operator-- (const int p);*/
 
 };
+
+#endif 
 
 #endif // D_
