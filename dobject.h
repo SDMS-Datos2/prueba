@@ -6,8 +6,8 @@
 
 class dObject {
 private:
-    std::string dObjectType;
-    void* dObjectPuntData;
+    std::string dObjectTipo;
+    void* dObjectPuntDato;
 public:
     dObject();
     std::string getDObjectTipo();
