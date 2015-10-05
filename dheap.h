@@ -9,14 +9,11 @@
 #include "dfloat.h"
 #include "dint.h"
 #include "dlong.h"
-//#include <linkedlist.h>
 
 using namespace std;
 
 /**
- * @brief The dHeap class Clase que abstrae el concepto de memoria
- * compartiendola en sus diferentes servidores. Solo posee los
- * datos realtivos a la localizacion de la informacion.
+ * @brief posee los datos realtivos a la localizacion de la informacion.
  */
 
 class dHeap{
@@ -26,14 +23,14 @@ public:
     static dHeap* instancia();
     d_pointer_size_type* dMalloc(int pSize, string pType);
     void dfree(d_pointer_size_type* pPuntero);
-    void dnew(d_pointer_size_type* pPuntero,int pDato); /** Hay que colocar un template en pDato */
+    void dnew(d_pointer_size_type* pPuntero,int pDato); 
 
 
     template<typename T>
     /**
-     * @brief dAddNewPetition Metodo que agrega un dato primitivo
+     * @brief dAddNewPetition agrega un dato primitivo
      * a la memoria compartida para luego ser borrado de la
-     * memoria local.
+     * memoria local
      * @param pDato cualquier tipo de dato primitivo.
      */
     void dAddNewPetition(T pDato){
@@ -67,19 +64,13 @@ public:
 
 private:
     char* path;
-    static dHeap* miInstancia;          /////
-    //LinkedList<int>* metadatos;         /////
-    //LinkedList<int>* listaDeServidores; /////
+    static dHeap* pInstancia;         
 
-    /** Declaracion de los metodos privados de nuestro dHeap*/
+    //Declaracion de los metodos privados
     dHeap(char* pPath);
     ~dHeap();
 
-    /** Realizamos la sobrecarga del operador de igualdad*/
+    //sobrecarga del operador de igualdad
     dHeap* operator=(const dHeap* heap);
 };
-
-
-
-
 #endif // DHEAP_H
