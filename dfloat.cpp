@@ -1,7 +1,5 @@
 /* 
  * File:   dfloat.cpp
- * Author: justin
- *
  */
 #include "d_pointer_size_type.h"
 #include "dfloat.h"
