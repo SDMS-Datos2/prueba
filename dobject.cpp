@@ -18,8 +18,8 @@ std::string dObject::getDObjectTipo(){
  * Setea el valor
  * @param pType, valor a setear
  */
-void dObject::setDObjectTipo(std::string pType){
-    this->dObjectTipo=pType;
+void dObject::setDObjectTipo(std::string pTypo){
+    this->dObjectTipo=pTypo;
 }
 /**
  * Devuelve el puntero
@@ -32,6 +32,6 @@ void* dObject::getDObjectPuntDato(){
  * Setea el puntero
  * @param pPuntData
  */
-void dObject::setDObjectPuntDato(void *pPuntData){
-    this->dObjectPuntDato= pPuntData;
+void dObject::setDObjectPuntDato(void *pPuntDato){
+    this->dObjectPuntDato= pPuntDato;
 }
