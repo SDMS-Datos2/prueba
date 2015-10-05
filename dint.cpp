@@ -1,13 +1,11 @@
 /* 
  * File:   dint.cpp
- * Author: justin
- *
  */
 #include "d_pointer_size_type.h"
 #include "dint.h"
 #include "dheap.h"
 /**
- * 
+ * Constructor
  * @param pPunterodHeap
  */
 dInt::dInt(void* pPunterodHeap)
@@ -17,8 +15,8 @@ dInt::dInt(void* pPunterodHeap)
 
 /**
  * @brief dInt::operator = operador de asignacion que guarda
- * el dato remotante y lo borra de la memoria local.
- * @param pInt dato tipo int
+ * el dato remotante y lo borra de la memoria local
+ * @param dato tipo int
  * @return un puntero void.
  */
 void* dInt::operator =(const int pInt){
