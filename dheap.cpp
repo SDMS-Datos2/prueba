@@ -1,10 +1,8 @@
 /* 
  * File:   dheap.cpp
- * Author: justin
- *
  */
 #include "dheap.h"
-dHeap* dHeap::miInstancia = 0;
+dHeap* dHeap::pInstancia = 0;
 
 /**
  * @brief dHeap::operator = Sobrecarga del operador de
@@ -13,7 +11,7 @@ dHeap* dHeap::miInstancia = 0;
  * @return un objeto del tipo dHeap.
  */
 dHeap* dHeap::operator =(const dHeap* heap){
-    return miInstancia;
+    return pInstancia;
 }
 /**
  * @brief dHeap::~dHeap Destructor por defecto
@@ -32,9 +30,9 @@ dHeap::dHeap(char* pPath) {
  */
 dHeap* dHeap::instancia(char* path)
 {
-    if (miInstancia == 0)
-        miInstancia = new dHeap(path);
-    return miInstancia;
+    if (pInstancia == 0)
+        pInstancia = new dHeap(path);
+    return pInstancia;
 }
 
 /**
@@ -44,7 +42,7 @@ dHeap* dHeap::instancia(char* path)
  */
 dHeap* dHeap::instancia()
 {
-    return miInstancia;
+    return pInstancia;
 }
 
 
