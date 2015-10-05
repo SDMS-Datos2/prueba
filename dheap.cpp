@@ -48,15 +48,15 @@ dHeap* dHeap::instancia()
 
 d_pointer_size_type* dHeap::dMalloc(int pSize, string pType)
 {
-    
+ malloc(pSize); 
 }
 
 void dHeap::dfree(d_pointer_size_type* pPuntero)
 {
-
+ free(pPuntero);
 }
 
 void dHeap::dnew(d_pointer_size_type* pPuntero, int pDato)
 {
-
+    calloc(1, sizeof(pPuntero));
 }

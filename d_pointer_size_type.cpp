@@ -85,7 +85,6 @@ void d_pointer_size_type::setRef(char pRef){
             + static_cast<unsigned int>(pRef);//Moviliza el puntero
 }
 /**
- * Sobrecarga el operador ==
  * @param pPointer
  * @return un valor de true o false según corresponda
  */
@@ -93,7 +92,6 @@ bool d_pointer_size_type::operator== (const d_pointer_size_type &pPointer){
     return (pPointer.getPtr() == this->getPtr());
 }
 /**
- * Sobrecarga el operador =
  * @param pPointer
  */
 void d_pointer_size_type::operator= (const d_pointer_size_type &pPointer){
