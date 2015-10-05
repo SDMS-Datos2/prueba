@@ -4,9 +4,7 @@
 using namespace std;
 
 /**
- * @brief The dChar class Clase envoltorio
- * para los datos tipo char.
- * @author Diego Granados Ly
+ * @brief envoltorio para los datos tipo char.
  */
 
 class dChar
