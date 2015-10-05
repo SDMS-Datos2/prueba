@@ -4,9 +4,7 @@
 using namespace std;
 
 /**
- * @brief The dFloat class Clase envoltorio
- * para los datos tipo float.
- * @author Diego Granados Ly
+ * @brief envoltorio para los datos tipo float.
  */
 class dFloat
 {
