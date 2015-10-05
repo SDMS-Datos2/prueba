@@ -4,9 +4,8 @@
 using namespace std;
 
 /**
- * @brief The dLong class Clase envoltorio
+ * @brief envoltorio
  * para los datos tipo long.
- * @author Diego Granados Ly
  */
 class dLong
 {
