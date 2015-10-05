@@ -1,7 +1,5 @@
 /* 
  * File:   dlong.cpp
- * Author: justin
- *
  */
 
 #include "dlong.h"
@@ -9,7 +7,7 @@
 #include "d_pointer_size_type.h"
 
 /**
- * 
+ * Consturctor
  * @param pPunterodHeap
  */
 
