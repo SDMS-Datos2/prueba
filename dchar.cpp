@@ -1,13 +1,12 @@
 /* 
  * File:   dchar.cpp
- * Author: justin
  *
  */
 #include "dchar.h"
 #include "d_pointer_size_type.h"
 #include "dheap.h"
 /**
- * 
+ * Constructor de la clase
  * @param pPunterodHeap
  */
 dChar::dChar(void* pPunterodHeap)
@@ -28,3 +27,4 @@ void* dChar::operator =(const char pChar){
     ((dHeap*)punteroHeap)->dnew(_puntero,_dato);
 
 }
+

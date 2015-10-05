@@ -1,7 +1,5 @@
 /* 
  * File:   dlong.cpp
- * Author: justin
- *
  */
 
 #include "dheap.h"
@@ -9,7 +7,7 @@
 #include "dlong.h"
 
 /**
- * 
+ * Consturctor
  * @param pPunterodHeap
  */
 

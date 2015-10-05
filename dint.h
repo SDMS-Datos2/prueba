@@ -6,9 +6,7 @@
 using namespace std;
 
 /**
- * @brief The dInt class Clase envoltorio
- * para los datos tipo int.
- * @author Diego Granados Ly
+ * @brief envoltorio para los datos tipo int.
  */
 class dInt
 {
