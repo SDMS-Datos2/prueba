@@ -52,7 +52,7 @@ void *Cliente_Thread::interactuar(void) {
         error(error2);
     if(_debug)
         printf("Please enter the message: ");
-    //////////////////////////////////////////
+    /**
     while(true){
         bzero(_buffer,DosCientaSeis);
         fgets(_buffer,DosCientaSeis-uno,stdin);
@@ -65,8 +65,35 @@ void *Cliente_Thread::interactuar(void) {
              error(error5);
         if(_debug)
             printf("%s\n", _buffer);
-    }
+    }*/
 }
+
+void Cliente_Thread::sendMSG(void* dato, int size, int type){
+    int i=type;
+    _n = write(_sockfd, &i, sizeof(int));
+    if (_n < cero) 
+        error(error4);
+    _n = write(_sockfd, &size, sizeof(size));
+    if (_n < cero) 
+        error(error4);
+    int datos=0;
+    _n = read(_sockfd, &datos, sizeof(int));
+    if (_n < cero) 
+         error(error5);
+    printf((const char*)datos);
+    i=3;
+    _n = write(_sockfd, &i, sizeof(int));
+    if (_n < cero) 
+        error(error4);
+    _n = write(_sockfd, &size, sizeof(size));
+    if (_n < cero) 
+        error(error4);
+    _n = write(_sockfd, &dato, size);
+    if (_n < cero) 
+        error(error4);
+    
+}
+
 
 /**
  * metodo para imprimir el pantalla los errores 

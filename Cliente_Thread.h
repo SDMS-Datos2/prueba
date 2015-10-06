@@ -30,6 +30,7 @@ public:
     void* interactuar(void);
     int getSocktFd();
     char* getID();
+    void sendMSG(void* dato, int size,int type);
     static void* getInteract(void* pThread)
     {
         return ((Cliente_Thread*) pThread)->interactuar();

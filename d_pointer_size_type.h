@@ -16,8 +16,8 @@ private:
 public:
     d_pointer_size_type();
     int getID()const;
-    int getPtr()const;
-    int getEsp();
+    unsigned int* getPtr()const;
+    unsigned int* getEsp();
     char getTipo();
     char getRef();
     void setID(int pID);
@@ -34,4 +34,3 @@ public:
 
 #endif 
 
-#endif // D_

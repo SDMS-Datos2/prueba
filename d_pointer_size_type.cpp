@@ -3,23 +3,24 @@
  *
  */
 #include "d_pointer_size_type.h"
+#include <math.h>
 /**
  * asigna un valor inicial de puntero
  */
 d_pointer_size_type::d_pointer_size_type(){
-    this->espacio=(int*)malloc(dos*sizeof(int));
-    this->puntero=(int*)malloc(dos*sizeof(int));
+    this->espacio=(unsigned int*)malloc(dos*sizeof(int));
+    this->puntero=(unsigned int*)malloc(dos*sizeof(int));
 }
 //Obtiene el ID 
 int d_pointer_size_type::getID()const{
     return ID;
 }
 //Obtiene el puntero
-int* d_pointer_size_type::getPtr()const{
+unsigned int* d_pointer_size_type::getPtr()const{
     return puntero;
 }
 //Obtiene el espacio en memoria que ocupa
-int* d_pointer_size_type::getEsp(){
+unsigned int* d_pointer_size_type::getEsp(){
     return espacio;
 }
 //Obtiene el tipo
@@ -50,7 +51,7 @@ void d_pointer_size_type::setPtr(long pPtr){
         (*puntero)=(pPtr/pow10(largo-nueve));
         pPtr%=(int)pow10(largo-nueve);
         *(++puntero)=(int)pPtr;
-        puntero-;
+        puntero--;
     }
 }
 /**

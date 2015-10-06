@@ -15,7 +15,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    Cliente * nuevo = new Cliente(5);
+    Cliente * nuevo = new Cliente(1);
     //void * dato = malloc(2*sizeof(int));
     //cout<< dato<< endl;
     //dato;

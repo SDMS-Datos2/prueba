@@ -16,9 +16,14 @@ using namespace std;
  */
 Cliente::Cliente(int servers) {
     _servers=servers;
-    _cantHilos=cero;
+    _cantHilos=uno;
     _hilos=(pthread_t *) malloc(_servers*sizeof(pthread_t));
     _servidores=(Cliente_Thread*)malloc(_servers*sizeof(Cliente_Thread));
+    startThread("127.0.0.1",5001);
+    //startThread("127.0.0.1",5002);
+    //startThread("127.0.0.1",5003);
+    //_servidores--;_servidores--;
+    _servidores->sendMSG((void*)56,sizeof(int),uno);
 }
 
 /**
@@ -35,9 +40,10 @@ Cliente::~Cliente() {
  * @param Pport dato que es un entero, es el numero de puerto para la conexion
  * contra el servidor.
  */
-void Cliente::startThread(char* pIP, int Pport) {
-    _servidores=new Cliente_Thread(pIP,Pport);
-    pthread_create(_hilos,NULL,&Cliente_Thread::getInteract,_servidores);
+void Cliente::startThread(char* pIP, int pPort) {
+    _servidores=new Cliente_Thread(pIP,pPort);
+    _servidores->interactuar();
+    //pthread_create(_hilos,NULL,&Cliente_Thread::getInteract,_servidores);
     if(_cantHilos<_servers){
         _servidores++;_cantHilos++;_hilos++;
     }
